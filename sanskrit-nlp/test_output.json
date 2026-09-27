@@ -1,1 +1,129 @@
-{"input":"boy, play","steps":{"1_meaning":[{"input":"boy","sanskrit":"बालक","english":"boy","found":true},{"input":"play","sanskrit":"क्रीड्","english":"play","found":true}],"2_classification":[{"word":"बालकः","category":"Noun"},{"word":"क्रीडति","category":"Verb"}],"3_grammar":[{"word":"बालकः","role":"Subject","gender":"masculine","number":"singular","case":"nominative","person":null,"tense":null},{"word":"क्रीडति","role":"Verb","gender":null,"number":"singular","case":null,"person":3,"tense":null}],"4_rules":[{"id":"R1","name":"Verb presence","passed":true,"message":"Exactly one verb found.","hard":true},{"id":"R2","name":"Subject presence","passed":true,"message":"A subject was found.","hard":true},{"id":"R3","name":"Subject case","passed":true,"message":"Subject is in the nominative (prathama vibhakti).","hard":true},{"id":"R4","name":"Object case","passed":true,"message":"Object (if any) is in the accusative (dvitiya vibhakti).","hard":true},{"id":"R5","name":"Subject-verb number agreement","passed":true,"message":"Subject and verb agree in number (singular).","hard":true},{"id":"R6","name":"Subject-verb person agreement","passed":true,"message":"Subject and verb agree in person (3rd person).","hard":true},{"id":"R7","name":"Transitivity","passed":true,"message":"Verb transitivity matches object usage.","hard":true},{"id":"R8","name":"Adjective-noun agreement","passed":true,"message":"Every adjective agrees with its noun in gender, case, and number.","hard":true},{"id":"R9","name":"No duplicate roles","passed":true,"message":"No word fills two roles at once.","hard":true},{"id":"R10","name":"Known words only","passed":true,"message":"Every word was found in the vocabulary.","hard":true}],"5_template":"Subject + Verb","6_output":{"sanskrit":"बालकः क्रीडति।","iast":"bālakaḥ krīḍati","english":"The boy plays."}},"success":true,"errors":[]}
+{
+  "input": "boy, play",
+  "steps": {
+    "1_meaning": [
+      {
+        "input": "boy",
+        "sanskrit": "बालक",
+        "english": "boy",
+        "found": true
+      },
+      {
+        "input": "play",
+        "sanskrit": "क्रीड्",
+        "english": "play",
+        "found": true
+      }
+    ],
+    "2_classification": [
+      {
+        "word": "बालकः",
+        "category": "Noun"
+      },
+      {
+        "word": "क्रीडति",
+        "category": "Verb"
+      }
+    ],
+    "3_grammar": [
+      {
+        "word": "बालकः",
+        "role": "Subject",
+        "gender": "masculine",
+        "number": "singular",
+        "case": "nominative",
+        "person": null,
+        "tense": null
+      },
+      {
+        "word": "क्रीडति",
+        "role": "Verb",
+        "gender": null,
+        "number": "singular",
+        "case": null,
+        "person": 3,
+        "tense": null
+      }
+    ],
+    "4_rules": [
+      {
+        "id": "R1",
+        "name": "Verb presence",
+        "passed": true,
+        "message": "Exactly one verb found.",
+        "hard": true
+      },
+      {
+        "id": "R2",
+        "name": "Subject presence",
+        "passed": true,
+        "message": "A subject was found.",
+        "hard": true
+      },
+      {
+        "id": "R3",
+        "name": "Subject case",
+        "passed": true,
+        "message": "Subject is in the nominative (prathama vibhakti).",
+        "hard": true
+      },
+      {
+        "id": "R4",
+        "name": "Object case",
+        "passed": true,
+        "message": "Object (if any) is in the accusative (dvitiya vibhakti).",
+        "hard": true
+      },
+      {
+        "id": "R5",
+        "name": "Subject-verb number agreement",
+        "passed": true,
+        "message": "Subject and verb agree in number (singular).",
+        "hard": true
+      },
+      {
+        "id": "R6",
+        "name": "Subject-verb person agreement",
+        "passed": true,
+        "message": "Subject and verb agree in person (3rd person).",
+        "hard": true
+      },
+      {
+        "id": "R7",
+        "name": "Transitivity",
+        "passed": true,
+        "message": "Verb transitivity matches object usage.",
+        "hard": true
+      },
+      {
+        "id": "R8",
+        "name": "Adjective-noun agreement",
+        "passed": true,
+        "message": "Every adjective agrees with its noun in gender, case, and number.",
+        "hard": true
+      },
+      {
+        "id": "R9",
+        "name": "No duplicate roles",
+        "passed": true,
+        "message": "No word fills two roles at once.",
+        "hard": true
+      },
+      {
+        "id": "R10",
+        "name": "Known words only",
+        "passed": true,
+        "message": "Every word was found in the vocabulary.",
+        "hard": true
+      }
+    ],
+    "5_template": "Subject + Verb",
+    "6_output": {
+      "sanskrit": "बालकः क्रीडति।",
+      "iast": "bālakaḥ krīḍati",
+      "english": "The boy plays."
+    }
+  },
+  "success": true,
+  "errors": []
+}

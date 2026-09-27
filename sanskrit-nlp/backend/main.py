@@ -71,7 +71,7 @@ async def health():
         await db.command("ping")
     except Exception:
         db_status = "unreachable"
-    return {"db": db_status, "groq": "enabled" if settings.groq_enabled else "disabled"}
+    return {"db": db_status, "groq": "enabled" if settings.openai_enabled else "disabled"}
 
 
 if FRONTEND_DIR.exists():

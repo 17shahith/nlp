@@ -30,8 +30,8 @@ class SuggestRequest(BaseModel):
 @router.post("/explain")
 async def explain(body: ExplainRequest):
     """Return a beginner-friendly explanation of a successful trace, via Groq."""
-    if not settings.groq_enabled:
-        raise HTTPException(status_code=503, detail="Groq is not configured on this server.")
+    if not settings.openai_enabled:
+        raise HTTPException(status_code=503, detail="AI Assistant is not configured on this server.")
     text = await groq_helper.explain_trace(body.trace)
     return {"explanation": text}
 
@@ -39,8 +39,8 @@ async def explain(body: ExplainRequest):
 @router.post("/suggest-word")
 async def suggest_word(body: SuggestRequest):
     """Ask Groq to propose a vocabulary entry for an unknown word; store as unverified."""
-    if not settings.groq_enabled:
-        raise HTTPException(status_code=503, detail="Groq is not configured on this server.")
+    if not settings.openai_enabled:
+        raise HTTPException(status_code=503, detail="AI Assistant is not configured on this server.")
 
     suggestion = await groq_helper.suggest_word(body.word)
     if suggestion is None:

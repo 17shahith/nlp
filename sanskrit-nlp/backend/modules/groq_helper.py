@@ -29,12 +29,12 @@ _TIMEOUT_SECONDS = 15.0
 
 
 def _client():
-    """Lazily construct a Groq client, or return None if unavailable."""
-    if not settings.groq_enabled:
+    """Lazily construct an OpenAI client, or return None if unavailable."""
+    if not settings.openai_enabled:
         return None
     try:
-        from groq import Groq  # imported lazily so the app works without the package too
-        return Groq(api_key=settings.groq_api_key)
+        from openai import OpenAI  # imported lazily so the app works without the package too
+        return OpenAI(api_key=settings.openai_api_key)
     except Exception:
         return None
 
@@ -57,7 +57,7 @@ async def explain_trace(trace: dict[str, Any]) -> str:
     )
     try:
         response = client.chat.completions.create(
-            model=settings.groq_model,
+            model=settings.openai_model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.2,
             timeout=_TIMEOUT_SECONDS,
@@ -93,7 +93,7 @@ async def suggest_word(unknown_word: str) -> Optional[dict[str, Any]]:
     )
     try:
         response = client.chat.completions.create(
-            model=settings.groq_model,
+            model=settings.openai_model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.2,
             timeout=_TIMEOUT_SECONDS,

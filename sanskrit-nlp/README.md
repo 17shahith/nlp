@@ -69,7 +69,7 @@ step-by-step trace shape used by the frontend and the assignment's example
 ```bash
 cd sanskrit-nlp
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
 
 cp .env.example .env
 # edit .env: set MONGODB_URI (local mongod or a MongoDB Atlas URI).
@@ -89,7 +89,7 @@ cd backend
 TESTING=true pytest             # uses a separate "<DB_NAME>_test" database
 ```
 
-`tests/conftest.py` forces `TESTING=true`, points at a `_test`-suffixed
+`backend/tests/conftest.py` forces `TESTING=true`, points at a `_test`-suffixed
 database, seeds it with the real vocabulary once per session, and drops it
 afterwards -- your development database is never touched.
 
