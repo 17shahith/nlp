@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanskrit Vakya Nirmata - Tests</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand"><span class="devanagari">संस्कृत वाक्य निर्माता</span></div>
+    <a href="/index.html">Generator</a>
+    <a href="/dictionary.html">Dictionary</a>
+    <a href="/rules.html">Rules</a>
+    <a href="/tests.html" class="active">Tests</a>
+  </nav>
+
+  <main>
+    <h1>Test suite</h1>
+    <p class="subtitle">Runs every seeded valid / invalid / incomplete case through the live pipeline.</p>
+
+    <div class="card">
+      <button id="runBtn">Run all tests</button>
+      <div class="summary-row" id="summaryRow" style="margin-top:14px;"></div>
+      <table id="resultsTable"></table>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/tests.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+[
+  {
+    "lemma": "राम", "iast": "rāma", "english": "Rama", "english_aliases": ["rama", "ram"],
+    "category": "Noun", "gender": "masculine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "रामः", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "रामौ", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "रामाः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "रामम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "रामौ", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "रामान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "बालक", "iast": "bālaka", "english": "boy", "english_aliases": ["boy", "boys"],
+    "category": "Noun", "gender": "masculine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "बालकः", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "बालकौ", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "बालकाः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "बालकम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "बालकौ", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "बालकान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "छात्र", "iast": "chātra", "english": "student", "english_aliases": ["student", "students"],
+    "category": "Noun", "gender": "masculine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "छात्रः", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "छात्रौ", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "छात्राः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "छात्रम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "छात्रौ", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "छात्रान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "शिक्षक", "iast": "śikṣaka", "english": "teacher", "english_aliases": ["teacher", "teachers"],
+    "category": "Noun", "gender": "masculine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "शिक्षकः", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "शिक्षकौ", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "शिक्षकाः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "शिक्षकम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "शिक्षकौ", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "शिक्षकान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "अश्व", "iast": "aśva", "english": "horse", "english_aliases": ["horse", "horses"],
+    "category": "Noun", "gender": "masculine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "अश्वः", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "अश्वौ", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "अश्वाः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "अश्वम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "अश्वौ", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "अश्वान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "नृप", "iast": "nṛpa", "english": "king", "english_aliases": ["king", "kings"],
+    "category": "Noun", "gender": "masculine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "नृपः", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "नृपौ", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "नृपाः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "नृपम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "नृपौ", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "नृपान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "सीता", "iast": "sītā", "english": "Sita", "english_aliases": ["sita"],
+    "category": "Noun", "gender": "feminine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "सीता", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "सीते", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "सीताः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "सीताम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "सीते", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "सीताः", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "बालिका", "iast": "bālikā", "english": "girl", "english_aliases": ["girl", "girls"],
+    "category": "Noun", "gender": "feminine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "बालिका", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "बालिके", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "बालिकाः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "बालिकाम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "बालिके", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "बालिकाः", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "लता", "iast": "latā", "english": "Lata", "english_aliases": ["lata"],
+    "category": "Noun", "gender": "feminine", "animate": true, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "लता", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "लते", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "लताः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "लताम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "लते", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "लताः", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "फल", "iast": "phala", "english": "fruit", "english_aliases": ["fruit", "fruits"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "फलम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "फले", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "फलानि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "फलम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "फले", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "फलानि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "पुस्तक", "iast": "pustaka", "english": "book", "english_aliases": ["book", "books"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "पुस्तकम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "पुस्तके", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "पुस्तकानि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "पुस्तकम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "पुस्तके", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "पुस्तकानि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "जल", "iast": "jala", "english": "water", "english_aliases": ["water"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "जलम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "जले", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "जलानि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "जलम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "जले", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "जलानि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "विद्यालय", "iast": "vidyālaya", "english": "school", "english_aliases": ["school", "schools"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "विद्यालयम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "विद्यालये", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "विद्यालयानि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "विद्यालयम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "विद्यालये", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "विद्यालयानि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "गृह", "iast": "gṛha", "english": "house", "english_aliases": ["house", "houses"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "गृहम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "गृहे", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "गृहाणि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "गृहम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "गृहे", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "गृहाणि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "वन", "iast": "vana", "english": "forest", "english_aliases": ["forest", "forests"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "वनम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "वने", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "वनानि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "वनम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "वने", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "वनानि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "पत्र", "iast": "patra", "english": "letter", "english_aliases": ["letter", "letters"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "पत्रम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "पत्रे", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "पत्राणि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "पत्रम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "पत्रे", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "पत्राणि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "दुग्ध", "iast": "dugdha", "english": "milk", "english_aliases": ["milk"],
+    "category": "Noun", "gender": "neuter", "animate": false, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "दुग्धम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "दुग्धे", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "दुग्धानि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "दुग्धम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "दुग्धे", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "दुग्धानि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "अहम्", "iast": "aham", "english": "I", "english_aliases": ["i", "me", "we", "us"],
+    "category": "Pronoun", "gender": null, "animate": true, "person": 1, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "अहम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "वयम्", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "मां", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "माम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "अस्मान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "त्वम्", "iast": "tvam", "english": "you", "english_aliases": ["you", "your"],
+    "category": "Pronoun", "gender": null, "animate": true, "person": 2, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "त्वम्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "यूयम्", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "त्वाम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "युष्मान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "सः", "iast": "saḥ", "english": "he", "english_aliases": ["he", "him", "they", "them"],
+    "category": "Pronoun", "gender": "masculine", "animate": true, "person": 3, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "सः", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "तौ", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "ते", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "तम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "तौ", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "तान्", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "सा", "iast": "sā", "english": "she", "english_aliases": ["she", "her"],
+    "category": "Pronoun", "gender": "feminine", "animate": true, "person": 3, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "सा", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "ते", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "ताः", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "ताम्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "ते", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "ताः", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "तत्", "iast": "tat", "english": "it", "english_aliases": ["it", "that", "this"],
+    "category": "Pronoun", "gender": "neuter", "animate": false, "person": 3, "verified": true, "source": "seed",
+    "forms": [
+      {"form": "तत्", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "ते", "case": "nominative", "vibhakti": "prathama", "number": "dual"},
+      {"form": "तानि", "case": "nominative", "vibhakti": "prathama", "number": "plural"},
+      {"form": "तत्", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "ते", "case": "accusative", "vibhakti": "dvitiya", "number": "dual"},
+      {"form": "तानि", "case": "accusative", "vibhakti": "dvitiya", "number": "plural"}
+    ]
+  },
+  {
+    "lemma": "खाद्", "iast": "khād", "english": "eat", "english_aliases": ["eat", "eats"],
+    "category": "Verb", "transitive": true, "verified": true, "source": "seed",
+    "english_verb": {"base": "eat", "3sg": "eats", "pl": "eat"},
+    "forms": [
+      {"form": "खादति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "खादन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "खादसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "खादथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "खादामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "खादामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "पठ्", "iast": "paṭh", "english": "read", "english_aliases": ["read", "reads"],
+    "category": "Verb", "transitive": true, "verified": true, "source": "seed",
+    "english_verb": {"base": "read", "3sg": "reads", "pl": "read"},
+    "forms": [
+      {"form": "पठति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पठन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "पठसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पठथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "पठामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पठामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "गच्छ्", "iast": "gacch", "english": "go", "english_aliases": ["go", "goes"],
+    "category": "Verb", "transitive": true, "verified": true, "source": "seed",
+    "english_verb": {"base": "go", "3sg": "goes", "pl": "go"},
+    "forms": [
+      {"form": "गच्छति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "गच्छन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "गच्छसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "गच्छथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "गच्छामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "गच्छामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "पिब्", "iast": "pib", "english": "drink", "english_aliases": ["drink", "drinks"],
+    "category": "Verb", "transitive": true, "verified": true, "source": "seed",
+    "english_verb": {"base": "drink", "3sg": "drinks", "pl": "drink"},
+    "forms": [
+      {"form": "पिबति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पिबन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "पिबसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पिबथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "पिबामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पिबामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "लिख्", "iast": "likh", "english": "write", "english_aliases": ["write", "writes"],
+    "category": "Verb", "transitive": true, "verified": true, "source": "seed",
+    "english_verb": {"base": "write", "3sg": "writes", "pl": "write"},
+    "forms": [
+      {"form": "लिखति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "लिखन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "लिखसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "लिखथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "लिखामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "लिखामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "पश्य्", "iast": "paśya", "english": "see", "english_aliases": ["see", "sees"],
+    "category": "Verb", "transitive": true, "verified": true, "source": "seed",
+    "english_verb": {"base": "see", "3sg": "sees", "pl": "see"},
+    "forms": [
+      {"form": "पश्यति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पश्यन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "पश्यसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पश्यथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "पश्यामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "पश्यामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "हस्", "iast": "has", "english": "laugh", "english_aliases": ["laugh", "laughs"],
+    "category": "Verb", "transitive": false, "verified": true, "source": "seed",
+    "english_verb": {"base": "laugh", "3sg": "laughs", "pl": "laugh"},
+    "forms": [
+      {"form": "हसति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "हसन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "हससि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "हसथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "हसामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "हसामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "धाव्", "iast": "dhāv", "english": "run", "english_aliases": ["run", "runs"],
+    "category": "Verb", "transitive": false, "verified": true, "source": "seed",
+    "english_verb": {"base": "run", "3sg": "runs", "pl": "run"},
+    "forms": [
+      {"form": "धावति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "धावन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "धावसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "धावथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "धावामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "धावामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "वद्", "iast": "vad", "english": "speak", "english_aliases": ["speak", "speaks"],
+    "category": "Verb", "transitive": true, "verified": true, "source": "seed",
+    "english_verb": {"base": "speak", "3sg": "speaks", "pl": "speak"},
+    "forms": [
+      {"form": "वदति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "वदन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "वदसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "वदथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "वदामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "वदामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "क्रीड्", "iast": "krīḍ", "english": "play", "english_aliases": ["play", "plays"],
+    "category": "Verb", "transitive": false, "verified": true, "source": "seed",
+    "english_verb": {"base": "play", "3sg": "plays", "pl": "play"},
+    "forms": [
+      {"form": "क्रीडति", "person": 3, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "क्रीडन्ति", "person": 3, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "क्रीडसि", "person": 2, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "क्रीडथ", "person": 2, "number": "plural", "tense": "present", "lakara": "lat"},
+      {"form": "क्रीडामि", "person": 1, "number": "singular", "tense": "present", "lakara": "lat"},
+      {"form": "क्रीडामः", "person": 1, "number": "plural", "tense": "present", "lakara": "lat"}
+    ]
+  },
+  {
+    "lemma": "सुन्दर", "iast": "sundara", "english": "beautiful", "english_aliases": ["beautiful"],
+    "category": "Adjective", "verified": true, "source": "seed",
+    "forms": [
+      {"form": "सुन्दरः", "gender": "masculine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "सुन्दरम्", "gender": "masculine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "सुन्दरी", "gender": "feminine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "सुन्दरीम्", "gender": "feminine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "सुन्दरम्", "gender": "neuter", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "सुन्दरम्", "gender": "neuter", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"}
+    ]
+  },
+  {
+    "lemma": "मधुर", "iast": "madhura", "english": "sweet", "english_aliases": ["sweet"],
+    "category": "Adjective", "verified": true, "source": "seed",
+    "forms": [
+      {"form": "मधुरः", "gender": "masculine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "मधुरम्", "gender": "masculine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "मधुरा", "gender": "feminine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "मधुराम्", "gender": "feminine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "मधुरम्", "gender": "neuter", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "मधुरम्", "gender": "neuter", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"}
+    ]
+  },
+  {
+    "lemma": "उत्तम", "iast": "uttama", "english": "good", "english_aliases": ["good"],
+    "category": "Adjective", "verified": true, "source": "seed",
+    "forms": [
+      {"form": "उत्तमः", "gender": "masculine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "उत्तमम्", "gender": "masculine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "उत्तमा", "gender": "feminine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "उत्तमाम्", "gender": "feminine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "उत्तमम्", "gender": "neuter", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "उत्तमम्", "gender": "neuter", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"}
+    ]
+  },
+  {
+    "lemma": "नव", "iast": "nava", "english": "new", "english_aliases": ["new"],
+    "category": "Adjective", "verified": true, "source": "seed",
+    "forms": [
+      {"form": "नवः", "gender": "masculine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "नवम्", "gender": "masculine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "नवा", "gender": "feminine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "नवाम्", "gender": "feminine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "नवम्", "gender": "neuter", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "नवम्", "gender": "neuter", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"}
+    ]
+  },
+  {
+    "lemma": "लघु", "iast": "laghu", "english": "small", "english_aliases": ["small"],
+    "category": "Adjective", "verified": true, "source": "seed",
+    "forms": [
+      {"form": "लघुः", "gender": "masculine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "लघुम्", "gender": "masculine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "लघ्वी", "gender": "feminine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "लघ्वीम्", "gender": "feminine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "लघु", "gender": "neuter", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "लघु", "gender": "neuter", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"}
+    ]
+  },
+  {
+    "lemma": "महत्", "iast": "mahat", "english": "big", "english_aliases": ["big"],
+    "category": "Adjective", "verified": true, "source": "seed",
+    "forms": [
+      {"form": "महान्", "gender": "masculine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "महान्तम्", "gender": "masculine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "महती", "gender": "feminine", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "महतीम्", "gender": "feminine", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"},
+      {"form": "महत्", "gender": "neuter", "case": "nominative", "vibhakti": "prathama", "number": "singular"},
+      {"form": "महत्", "gender": "neuter", "case": "accusative", "vibhakti": "dvitiya", "number": "singular"}
+    ]
+  }
+]

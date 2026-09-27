@@ -1,0 +1,17 @@
+[
+  {"id": 1, "type": "valid", "input": "Rama, fruit, eats", "expected_sanskrit": "रामः फलम् खादति।", "expected_english": "Rama eats the fruit."},
+  {"id": 2, "type": "valid", "input": "रामः, फलम्, खादति", "expected_sanskrit": "रामः फलम् खादति।", "expected_english": "Rama eats the fruit."},
+  {"id": 3, "type": "valid", "input": "बालकः, विद्यालयम्, गच्छति", "expected_sanskrit": "बालकः विद्यालयम् गच्छति।", "expected_english": "The boy goes to the school."},
+  {"id": 4, "type": "valid", "input": "boy, runs", "expected_sanskrit": "बालकः धावति।", "expected_english": "The boy runs."},
+  {"id": 5, "type": "valid", "input": "I, book, read", "expected_sanskrit": "अहम् पुस्तकम् पठामि।", "expected_english": "I read the book."},
+  {"id": 6, "type": "valid", "input": "Sita, sweet, milk, drinks", "expected_sanskrit": "सीता मधुरम् दुग्धम् पिबति।", "expected_english": "Sita drinks the sweet milk."},
+  {"id": 7, "type": "valid", "input": "boys, school, go", "expected_sanskrit": "बालकाः विद्यालयम् गच्छन्ति।", "expected_english": "The boys go to the school."},
+  {"id": 8, "type": "invalid", "input": "रामः, फलम्, खादन्ति", "expected_failure": "R5"},
+  {"id": 9, "type": "invalid", "input": "अहम्, फलम्, खादति", "expected_failure": "R6"},
+  {"id": 10, "type": "invalid", "input": "बालकः, सुन्दरी, खादति, फलम्", "expected_failure": "R8"},
+  {"id": 11, "type": "invalid", "input": "boy, fruit, runs", "expected_failure": "R7"},
+  {"id": 12, "type": "invalid", "input": "Rama, xyzabc, eats", "expected_failure": "R10"},
+  {"id": 13, "type": "incomplete", "input": "Rama, fruit", "expected_failure": "R1"},
+  {"id": 14, "type": "incomplete", "input": "eats", "expected_failure": "R2"},
+  {"id": 15, "type": "incomplete", "input": "", "expected_message": "Please enter at least two words"}
+]

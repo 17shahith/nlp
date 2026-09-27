@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanskrit Vakya Nirmata - Generator</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand"><span class="devanagari">संस्कृत वाक्य निर्माता</span></div>
+    <a href="/index.html" class="active">Generator</a>
+    <a href="/dictionary.html">Dictionary</a>
+    <a href="/rules.html">Rules</a>
+    <a href="/tests.html">Tests</a>
+  </nav>
+
+  <main>
+    <h1>Sentence Generator</h1>
+    <p class="subtitle">Enter comma-separated Sanskrit (Devanagari) or English words. Every sentence is built by explicit grammar rules — no AI writes or edits it.</p>
+
+    <div class="card">
+      <div class="chips" id="exampleChips"></div>
+      <div class="input-row">
+        <input type="text" id="wordsInput" placeholder="e.g. Rama, fruit, eats" autocomplete="off">
+        <button id="generateBtn">Generate</button>
+      </div>
+    </div>
+
+    <div id="resultCard" class="card hidden">
+      <h2>Result</h2>
+      <div class="result-sanskrit devanagari" id="resultSanskrit"></div>
+      <div class="result-iast" id="resultIast"></div>
+      <div class="result-english" id="resultEnglish"></div>
+      <button class="secondary" id="explainBtn" style="margin-top:12px;">Explain with AI</button>
+      <div id="explainText" class="muted" style="margin-top:10px;"></div>
+    </div>
+
+    <div id="errorCard" class="card error-card hidden">
+      <h2>Could not generate a sentence</h2>
+      <ul id="errorList"></ul>
+    </div>
+
+    <div id="traceCard" class="card hidden">
+      <h2>Step-by-step pipeline</h2>
+
+      <div class="step-block">
+        <div class="step-title">1. Meaning</div>
+        <table id="step1Table"></table>
+      </div>
+      <div class="step-block">
+        <div class="step-title">2. Classification</div>
+        <table id="step2Table"></table>
+      </div>
+      <div class="step-block">
+        <div class="step-title">3. Grammar info</div>
+        <table id="step3Table"></table>
+      </div>
+      <div class="step-block">
+        <div class="step-title">4. Rules applied</div>
+        <table id="step4Table"></table>
+      </div>
+      <div class="step-block">
+        <div class="step-title">5. Template</div>
+        <div id="step5Text" class="muted"></div>
+      </div>
+      <div class="step-block">
+        <div class="step-title">6. Output</div>
+        <div id="step6Text" class="muted"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/generator.js"></script>
+</body>
+</html>

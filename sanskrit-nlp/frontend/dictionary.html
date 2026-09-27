@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanskrit Vakya Nirmata - Dictionary</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand"><span class="devanagari">संस्कृत वाक्य निर्माता</span></div>
+    <a href="/index.html">Generator</a>
+    <a href="/dictionary.html" class="active">Dictionary</a>
+    <a href="/rules.html">Rules</a>
+    <a href="/tests.html">Tests</a>
+  </nav>
+
+  <main>
+    <h1>Dictionary</h1>
+    <p class="subtitle">Search the vocabulary, browse by category, or add a new word.</p>
+
+    <div class="card">
+      <div class="input-row">
+        <input type="text" id="searchInput" placeholder="Search Sanskrit or English (e.g. फलम् or fruit)">
+        <button id="searchBtn">Search</button>
+      </div>
+      <div id="searchResult" class="muted" style="margin-top:10px;"></div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Browse</h2>
+      <div class="input-row" style="margin-bottom:14px;">
+        <select id="categoryFilter">
+          <option value="">All categories</option>
+          <option value="Noun">Noun</option>
+          <option value="Verb">Verb</option>
+          <option value="Adjective">Adjective</option>
+          <option value="Pronoun">Pronoun</option>
+        </select>
+        <button id="browseBtn" class="secondary">Refresh</button>
+      </div>
+      <table id="wordsTable"></table>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Add word</h2>
+      <form class="add-word-form" id="addWordForm">
+        <label>Lemma (Devanagari)<input type="text" name="lemma" required></label>
+        <label>IAST<input type="text" name="iast" required></label>
+        <label>English<input type="text" name="english" required></label>
+        <label>English aliases (comma-separated)<input type="text" name="english_aliases"></label>
+        <label>Category
+          <select name="category" required>
+            <option>Noun</option><option>Verb</option><option>Adjective</option><option>Pronoun</option>
+          </select>
+        </label>
+        <label>Gender
+          <select name="gender"><option value="">-</option><option>masculine</option><option>feminine</option><option>neuter</option></select>
+        </label>
+        <label>Animate<select name="animate"><option value="false">No</option><option value="true">Yes</option></select></label>
+        <label>Forms (JSON array)
+          <textarea name="forms" rows="3" placeholder='[{"form":"...","case":"nominative","vibhakti":"prathama","number":"singular"}]'></textarea>
+        </label>
+        <div class="full"><button type="submit">Add word</button></div>
+      </form>
+      <div id="addWordResult" class="muted" style="margin-top:10px;"></div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Pending suggestions (from AI assist)</h2>
+      <table id="pendingTable"></table>
+      <div id="pendingEmpty" class="muted"></div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/dictionary.js"></script>
+</body>
+</html>
