@@ -9,7 +9,7 @@ router = APIRouter(prefix="/api", tags=["rules"])
 
 _EXAMPLES = {
     "R1": "'Rama, fruit' (no verb) fails: no verb found.",
-    "R2": "'eats' alone fails: no subject found.",
+    "R2": "'play' alone fails: Subject is required. Please provide a subject, e.g., boy, play.",
     "R3": "An accusative word placed as Subject would fail this rule.",
     "R4": "An object given in the wrong case would fail this rule.",
     "R5": "'रामः, फलम्, खादन्ति' fails: singular subject, plural verb.",

@@ -74,7 +74,7 @@ def _r2_subject_presence(ctx: RuleContext) -> RuleResult:
         return RuleResult(id="R2", name="Subject presence", passed=True,
                            message="A subject was found.")
     return RuleResult(id="R2", name="Subject presence", passed=False,
-                       message="Cannot generate sentence: no subject found (need a noun or pronoun).")
+                       message="Subject is required. Please provide a subject, e.g., boy, play.")
 
 
 def _r3_subject_case(ctx: RuleContext) -> RuleResult:

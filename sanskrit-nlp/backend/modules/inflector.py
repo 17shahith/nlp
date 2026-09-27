@@ -126,7 +126,6 @@ def _inflect_verb(slot: WordSlot, subject: Optional[WordSlot]) -> None:
         return
 
     if subject is None:
-        slot.error = "No subject available to determine verb agreement"
         return
 
     person = subject.chosen_person if subject.chosen_person else 3
