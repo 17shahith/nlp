@@ -23,14 +23,14 @@ class Settings:
 
     mongodb_uri: str
     db_name: str
-    groq_api_key: str | None
-    groq_model: str
+    openai_api_key: str | None
+    openai_model: str
     testing: bool
 
     @property
-    def groq_enabled(self) -> bool:
-        """Whether a Groq API key has been configured."""
-        return bool(self.groq_api_key)
+    def openai_enabled(self) -> bool:
+        """Whether an OpenAI API key has been configured."""
+        return bool(self.openai_api_key)
 
 
 def _load_settings() -> Settings:
@@ -43,8 +43,8 @@ def _load_settings() -> Settings:
     return Settings(
         mongodb_uri=os.getenv("MONGODB_URI", "mongodb://localhost:27017"),
         db_name=db_name,
-        groq_api_key=os.getenv("GROQ_API_KEY") or None,
-        groq_model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+        openai_api_key=os.getenv("OPENAI_API_KEY") or None,
+        openai_model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
         testing=testing,
     )
 
