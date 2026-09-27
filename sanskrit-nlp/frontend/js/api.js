@@ -24,6 +24,7 @@ const Api = {
   listWords: (category, page = 1) =>
     apiRequest(`/words?${category ? `category=${encodeURIComponent(category)}&` : ""}page=${page}`),
   addWord: (word) => apiRequest("/words", { method: "POST", body: JSON.stringify(word) }),
+  updateWord: (lemma, word) => apiRequest(`/words/${encodeURIComponent(lemma)}`, { method: "PUT", body: JSON.stringify(word) }),
   pendingWords: () => apiRequest("/words/pending"),
   approveWord: (lemma) => apiRequest(`/words/${encodeURIComponent(lemma)}/approve`, { method: "POST" }),
   deleteWord: (lemma) => apiRequest(`/words/${encodeURIComponent(lemma)}`, { method: "DELETE" }),

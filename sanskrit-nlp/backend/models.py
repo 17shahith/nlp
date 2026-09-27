@@ -11,7 +11,7 @@ from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, Field, field_validator
 
-Category = Literal["Noun", "Verb", "Adjective", "Pronoun"]
+Category = Literal["Noun", "Verb", "Adjective", "Pronoun", "Adverb", "Other"]
 Gender = Literal["masculine", "feminine", "neuter"]
 CaseName = Literal[
     "nominative", "accusative", "instrumental", "dative",
@@ -68,6 +68,8 @@ class Word(BaseModel):
     gender: Optional[Gender] = None
     animate: bool = False
     person: Optional[int] = None
+    number: Optional[str] = None
+    notes: Optional[str] = None
     transitive: Optional[bool] = None
     english_verb: Optional[EnglishVerb] = None
     forms: list[dict[str, Any]] = Field(default_factory=list)

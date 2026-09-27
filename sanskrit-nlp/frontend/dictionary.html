@@ -28,7 +28,10 @@
     </div>
 
     <div class="card">
-      <h2 style="margin-top:0;">Browse</h2>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+        <h2 style="margin:0;">Browse</h2>
+        <button id="openAddWordModalBtn">+ Add New Word</button>
+      </div>
       <div class="input-row" style="margin-bottom:14px;">
         <select id="categoryFilter">
           <option value="">All categories</option>
@@ -36,40 +39,82 @@
           <option value="Verb">Verb</option>
           <option value="Adjective">Adjective</option>
           <option value="Pronoun">Pronoun</option>
+          <option value="Adverb">Adverb</option>
+          <option value="Other">Other</option>
         </select>
         <button id="browseBtn" class="secondary">Refresh</button>
       </div>
-      <table id="wordsTable"></table>
+      <div class="table-container">
+        <table id="wordsTable"></table>
+      </div>
     </div>
 
-    <div class="card">
-      <h2 style="margin-top:0;">Add word</h2>
-      <form class="add-word-form" id="addWordForm">
-        <label>Lemma (Devanagari)<input type="text" name="lemma" required></label>
-        <label>IAST<input type="text" name="iast" required></label>
-        <label>English<input type="text" name="english" required></label>
-        <label>English aliases (comma-separated)<input type="text" name="english_aliases"></label>
-        <label>Category
-          <select name="category" required>
-            <option>Noun</option><option>Verb</option><option>Adjective</option><option>Pronoun</option>
-          </select>
-        </label>
-        <label>Gender
-          <select name="gender"><option value="">-</option><option>masculine</option><option>feminine</option><option>neuter</option></select>
-        </label>
-        <label>Animate<select name="animate"><option value="false">No</option><option value="true">Yes</option></select></label>
-        <label>Forms (JSON array)
-          <textarea name="forms" rows="3" placeholder='[{"form":"...","case":"nominative","vibhakti":"prathama","number":"singular"}]'></textarea>
-        </label>
-        <div class="full"><button type="submit">Add word</button></div>
-      </form>
-      <div id="addWordResult" class="muted" style="margin-top:10px;"></div>
-    </div>
 
     <div class="card">
       <h2 style="margin-top:0;">Pending suggestions (from AI assist)</h2>
       <table id="pendingTable"></table>
       <div id="pendingEmpty" class="muted"></div>
+    </div>
+
+    <!-- Word Modal -->
+    <div id="wordModal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="wordModalTitle">Add New Word</h2>
+          <button type="button" class="close-btn" id="closeWordModalBtn">✕</button>
+        </div>
+        <form class="add-word-form" id="wordForm">
+          <input type="hidden" name="original_lemma" id="original_lemma">
+          <label>Sanskrit Lemma <input type="text" name="lemma" required></label>
+          <label>IAST <input type="text" name="iast" required></label>
+          <label>English Meaning <input type="text" name="english" required></label>
+          <label>Category
+            <select name="category" required>
+              <option value="Noun">Noun</option>
+              <option value="Pronoun">Pronoun</option>
+              <option value="Verb">Verb</option>
+              <option value="Adjective">Adjective</option>
+              <option value="Adverb">Adverb</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label>Gender
+            <select name="gender">
+              <option value="">Not Applicable</option>
+              <option value="masculine">Masculine</option>
+              <option value="feminine">Feminine</option>
+              <option value="neuter">Neuter</option>
+            </select>
+          </label>
+          <label>Person (for pronouns/verbs)
+            <select name="person">
+              <option value="">Not Applicable</option>
+              <option value="1">1st Person</option>
+              <option value="2">2nd Person</option>
+              <option value="3">3rd Person</option>
+            </select>
+          </label>
+          <label>Number
+            <select name="number">
+              <option value="">Not Applicable</option>
+              <option value="singular">Singular</option>
+              <option value="dual">Dual</option>
+              <option value="plural">Plural</option>
+            </select>
+          </label>
+          <label class="full">Sample Forms (JSON array)
+            <textarea name="forms" rows="3" placeholder='[{"form":"...","case":"nominative","vibhakti":"prathama","number":"singular"}]'></textarea>
+          </label>
+          <label class="full">Description/Notes
+            <textarea name="notes" rows="2" placeholder="Optional notes"></textarea>
+          </label>
+          <div class="full" style="display: flex; gap: 10px; margin-top: 10px;">
+            <button type="button" class="secondary" id="cancelWordModalBtn">Cancel</button>
+            <button type="submit" id="saveWordBtn">Save Word</button>
+          </div>
+        </form>
+        <div id="wordFormMessage" class="muted" style="margin-top:10px;"></div>
+      </div>
     </div>
   </main>
 

@@ -1,4 +1,4 @@
-/** Dictionary page: search, browse, add words, and manage pending AI suggestions. */
+/** Dictionary page: search, browse, add words, edit words, and manage pending AI suggestions. */
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -36,7 +36,7 @@ async function loadWords() {
     const { items } = await Api.listWords(category || undefined);
     table.innerHTML = "";
     const thead = el("tr");
-    ["Lemma", "IAST", "English", "Category", "Gender", "Sample forms"].forEach((h) =>
+    ["Lemma", "IAST", "English", "Category", "Gender", "Sample forms", "Actions"].forEach((h) =>
       thead.appendChild(el("th", null, h))
     );
     table.appendChild(thead);
@@ -49,26 +49,90 @@ async function loadWords() {
       row.appendChild(el("td", null, w.gender || "-"));
       const sample = (w.forms || []).slice(0, 3).map((f) => f.form).join(", ");
       row.appendChild(el("td", "devanagari", sample));
+      
+      const actionsCell = el("td", "actions-cell");
+      
+      const editBtn = el("button", "secondary", "Edit");
+      editBtn.addEventListener("click", () => openEditWordModal(w));
+      
+      const delBtn = el("button", "secondary", "Delete");
+      delBtn.addEventListener("click", () => confirmDeleteWord(w.lemma));
+      
+      actionsCell.appendChild(editBtn);
+      actionsCell.appendChild(delBtn);
+      
+      row.appendChild(actionsCell);
+      
       table.appendChild(row);
     });
   } catch (err) {
-    table.innerHTML = `<tr><td>${err.message}</td></tr>`;
+    table.innerHTML = `<tr><td>Unable to load dictionary entries. Please try again. (${err.message})</td></tr>`;
   }
 }
 
-async function submitAddWord(evt) {
-  evt.preventDefault();
-  const form = evt.target;
-  const resultBox = document.getElementById("addWordResult");
-  const data = new FormData(form);
+// Modal handling
+const wordModal = document.getElementById("wordModal");
+const wordForm = document.getElementById("wordForm");
+const wordFormMessage = document.getElementById("wordFormMessage");
+const saveWordBtn = document.getElementById("saveWordBtn");
 
+function closeWordModal() {
+  wordModal.classList.add("hidden");
+}
+
+document.getElementById("openAddWordModalBtn").addEventListener("click", () => {
+  wordForm.reset();
+  document.getElementById("original_lemma").value = "";
+  document.getElementById("wordModalTitle").textContent = "Add New Word";
+  wordFormMessage.textContent = "";
+  wordFormMessage.className = "muted";
+  saveWordBtn.disabled = false;
+  saveWordBtn.textContent = "Save Word";
+  wordModal.classList.remove("hidden");
+});
+
+function openEditWordModal(w) {
+  wordForm.reset();
+  document.getElementById("original_lemma").value = w.lemma;
+  document.getElementById("wordModalTitle").textContent = "Edit Word";
+  wordFormMessage.textContent = "";
+  wordFormMessage.className = "muted";
+  saveWordBtn.disabled = false;
+  saveWordBtn.textContent = "Save Word";
+  
+  wordForm.elements["lemma"].value = w.lemma;
+  wordForm.elements["iast"].value = w.iast || "";
+  wordForm.elements["english"].value = w.english || "";
+  wordForm.elements["category"].value = w.category || "";
+  wordForm.elements["gender"].value = w.gender || "";
+  wordForm.elements["person"].value = w.person || "";
+  wordForm.elements["number"].value = w.number || "";
+  wordForm.elements["notes"].value = w.notes || "";
+  
+  if (w.forms && w.forms.length > 0) {
+    wordForm.elements["forms"].value = JSON.stringify(w.forms, null, 2);
+  } else {
+    wordForm.elements["forms"].value = "";
+  }
+  
+  wordModal.classList.remove("hidden");
+}
+
+document.getElementById("closeWordModalBtn").addEventListener("click", closeWordModal);
+document.getElementById("cancelWordModalBtn").addEventListener("click", closeWordModal);
+
+wordForm.addEventListener("submit", async (evt) => {
+  evt.preventDefault();
+  const data = new FormData(wordForm);
+  
   let forms = [];
   const formsText = data.get("forms");
   if (formsText && formsText.trim()) {
     try {
       forms = JSON.parse(formsText);
     } catch (e) {
-      resultBox.textContent = "Forms must be valid JSON.";
+      wordFormMessage.textContent = "Sample Forms must be valid JSON.";
+      wordFormMessage.className = "badge fail";
       return;
     }
   }
@@ -77,21 +141,49 @@ async function submitAddWord(evt) {
     lemma: data.get("lemma"),
     iast: data.get("iast"),
     english: data.get("english"),
-    english_aliases: (data.get("english_aliases") || "")
-      .split(",").map((s) => s.trim()).filter(Boolean),
     category: data.get("category"),
     gender: data.get("gender") || null,
-    animate: data.get("animate") === "true",
+    person: data.get("person") ? parseInt(data.get("person")) : null,
+    number: data.get("number") || null,
+    notes: data.get("notes") || null,
     forms,
   };
 
+  saveWordBtn.disabled = true;
+  saveWordBtn.textContent = "Saving...";
+  wordFormMessage.textContent = "";
+  wordFormMessage.className = "muted";
+
   try {
-    await Api.addWord(payload);
-    resultBox.textContent = `Added '${payload.lemma}'.`;
-    form.reset();
-    loadWords();
+    const originalLemma = data.get("original_lemma");
+    if (originalLemma) {
+      await Api.updateWord(originalLemma, payload);
+      wordFormMessage.textContent = "Word updated successfully.";
+    } else {
+      await Api.addWord(payload);
+      wordFormMessage.textContent = "Word added successfully.";
+    }
+    wordFormMessage.className = "badge pass";
+    setTimeout(() => { 
+      closeWordModal(); 
+      loadWords(); 
+    }, 1500);
   } catch (err) {
-    resultBox.textContent = err.message;
+    wordFormMessage.textContent = err.message;
+    wordFormMessage.className = "badge fail";
+    saveWordBtn.disabled = false;
+    saveWordBtn.textContent = "Save Word";
+  }
+});
+
+async function confirmDeleteWord(lemma) {
+  if (confirm("Are you sure you want to delete this dictionary entry?")) {
+    try {
+      await Api.deleteWord(lemma);
+      loadWords();
+    } catch (err) {
+      alert(`Error deleting word: ${err.message}`);
+    }
   }
 }
 
@@ -141,7 +233,6 @@ document.getElementById("searchBtn").addEventListener("click", doSearch);
 document.getElementById("searchInput").addEventListener("keydown", (e) => { if (e.key === "Enter") doSearch(); });
 document.getElementById("browseBtn").addEventListener("click", loadWords);
 document.getElementById("categoryFilter").addEventListener("change", loadWords);
-document.getElementById("addWordForm").addEventListener("submit", submitAddWord);
 
 loadWords();
 loadPending();

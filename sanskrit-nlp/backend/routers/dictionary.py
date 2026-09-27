@@ -91,6 +91,29 @@ async def add_word(word: Word):
     return doc
 
 
+@router.put("/words/{lemma}")
+async def update_word(lemma: str, word: Word):
+    """Update an existing vocabulary entry."""
+    db = get_db()
+    existing = await db.words.find_one({"lemma": lemma})
+    if not existing:
+        raise HTTPException(status_code=404, detail=f"No word with lemma '{lemma}'.")
+    
+    if lemma != word.lemma:
+        conflict = await db.words.find_one({"lemma": word.lemma})
+        if conflict:
+            raise HTTPException(status_code=409, detail=f"Lemma '{word.lemma}' already exists.")
+
+    doc = word.model_dump()
+    doc["verified"] = True
+    if "source" not in doc or not doc["source"]:
+        doc["source"] = existing.get("source", "manual")
+        
+    await db.words.replace_one({"lemma": lemma}, doc)
+    doc.pop("_id", None)
+    return doc
+
+
 @router.get("/words/pending")
 async def list_pending_words():
     """List Groq-suggested words awaiting human approval."""

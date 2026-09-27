@@ -157,3 +157,37 @@ form.add-word-form .full { grid-column: 1 / -1; }
 
 .hidden { display: none !important; }
 .muted { color: var(--muted); }
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  width: 100%; max-width: 600px;
+  max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.modal-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px;
+}
+.modal-header h2 { margin: 0; }
+.close-btn { 
+  background: transparent; color: var(--muted); padding: 4px;
+  font-size: 1.2rem; cursor: pointer; border: none;
+}
+.close-btn:hover { background: var(--bg); color: var(--ink); }
+
+.actions-cell button { padding: 6px 12px; font-size: 0.8rem; margin-right: 4px; }
+
+/* scrollable table container for smaller screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
