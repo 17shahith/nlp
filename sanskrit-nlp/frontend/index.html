@@ -8,16 +8,22 @@
 </head>
 <body>
   <nav class="topnav">
-    <div class="brand">Sanskrit Vakya Nirmata</div>
-    <a href="/index.html" class="active">Generator</a>
-    <a href="/dictionary.html">Dictionary</a>
-    <a href="/rules.html">Rules</a>
-    <a href="/tests.html">Tests</a>
+    <div class="nav-container">
+      <div class="brand">Sanskrit Vakya Nirmata</div>
+      <div class="nav-links">
+        <a href="/index.html" class="active">Generator</a>
+        <a href="/dictionary.html">Dictionary</a>
+        <a href="/rules.html">Rules</a>
+        <a href="/tests.html">Tests</a>
+      </div>
+    </div>
   </nav>
 
   <main>
-    <h1>Sentence Generator</h1>
-    <p class="subtitle">Enter comma-separated Sanskrit (Devanagari) or English words. Every sentence is built by explicit grammar rules — no AI writes or edits it.</p>
+    <div class="hero-section">
+      <h1 class="hero-title">Sanskrit Vakya Nirmata</h1>
+      <p class="hero-subtitle">Experience fast, deterministic Sanskrit sentence generation. Powered by explicit rules. Built for speed.</p>
+    </div>
 
     <div class="card">
       <div class="chips" id="exampleChips"></div>
@@ -32,7 +38,7 @@
       <div class="result-sanskrit devanagari" id="resultSanskrit"></div>
       <div class="result-iast" id="resultIast"></div>
       <div class="result-english" id="resultEnglish"></div>
-      <button class="secondary" id="explainBtn" style="margin-top:12px;">Explain with AI</button>
+      <button class="secondary" id="explainBtn" style="margin-top:14px;">Explain with AI</button>
       <div id="explainText" class="muted" style="margin-top:10px;"></div>
     </div>
 
@@ -46,19 +52,27 @@
 
       <div class="step-block">
         <div class="step-title">1. Meaning</div>
-        <table id="step1Table"></table>
+        <div class="table-container">
+          <table id="step1Table"></table>
+        </div>
       </div>
       <div class="step-block">
         <div class="step-title">2. Classification</div>
-        <table id="step2Table"></table>
+        <div class="table-container">
+          <table id="step2Table"></table>
+        </div>
       </div>
       <div class="step-block">
         <div class="step-title">3. Grammar info</div>
-        <table id="step3Table"></table>
+        <div class="table-container">
+          <table id="step3Table"></table>
+        </div>
       </div>
       <div class="step-block">
         <div class="step-title">4. Rules applied</div>
-        <table id="step4Table"></table>
+        <div class="table-container">
+          <table id="step4Table"></table>
+        </div>
       </div>
       <div class="step-block">
         <div class="step-title">5. Template</div>

@@ -43,8 +43,8 @@ def _load_settings() -> Settings:
     return Settings(
         mongodb_uri=os.getenv("MONGODB_URI", "mongodb://localhost:27017"),
         db_name=db_name,
-        openai_api_key=os.getenv("OPENAI_API_KEY") or None,
-        openai_model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+        openai_api_key=os.getenv("GROQ_API_KEY") or os.getenv("OPENAI_API_KEY") or None,
+        openai_model=os.getenv("GROQ_MODEL") or os.getenv("OPENAI_MODEL", "llama-3.3-70b-versatile"),
         testing=testing,
     )
 

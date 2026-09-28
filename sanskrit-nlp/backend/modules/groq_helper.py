@@ -29,11 +29,16 @@ _TIMEOUT_SECONDS = 15.0
 
 
 def _client():
-    """Lazily construct an OpenAI client, or return None if unavailable."""
+    """Lazily construct a Groq or OpenAI client, or return None if unavailable."""
     if not settings.openai_enabled:
         return None
     try:
-        from openai import OpenAI  # imported lazily so the app works without the package too
+        from groq import Groq
+        return Groq(api_key=settings.openai_api_key)
+    except Exception:
+        pass
+    try:
+        from openai import OpenAI
         return OpenAI(api_key=settings.openai_api_key)
     except Exception:
         return None

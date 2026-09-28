@@ -9,7 +9,7 @@ function el(tag, className, text) {
 
 async function loadRules() {
   const grid = document.getElementById("ruleGrid");
-  grid.innerHTML = "Loading...";
+  grid.innerHTML = '<div class="muted">Loading rules...</div>';
   try {
     const { items } = await Api.rules();
     grid.innerHTML = "";
@@ -20,11 +20,11 @@ async function loadRules() {
       if (rule.example) {
         card.appendChild(el("p", "example", `Example: ${rule.example}`));
       }
-      card.appendChild(el("p", null, rule.hard ? "Blocking rule" : "Warning only"));
+      card.appendChild(el("p", `rule-type ${rule.hard ? "blocking" : "warning"}`, rule.hard ? "Blocking rule" : "Warning only"));
       grid.appendChild(card);
     });
   } catch (err) {
-    grid.innerHTML = `<div class="card">${err.message}</div>`;
+    grid.innerHTML = `<div class="card error-card">${err.message}</div>`;
   }
 }
 
